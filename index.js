@@ -183,18 +183,15 @@ main.innerHTML = "";
 
   // 4. Create an array
   const parksArray = Array.from(parksList);
+  const parkARating = parkARatingEl ? parseFloat(parkARatingEl.innerText) : 0;
+  const parkBRating = parkBRatingEl ? parseFloat(parkBRatingEl.innerText) : 0;
 
   // 5. Sort the array
   ratings.sort((parkA, parkB) => {
     const parkARating = parseFloat(parkA.querySelector(".rating-display .value"));
     const parkBRating = parseFloat(parkB.querySelector(".rating-display .value"));
-    if (parkARating < parkBRating) {
-      return -1;
-    } else if (parkARating > parkBRating) {
-      return 1;
-    } else {
-      return 0;
-    }
+    return parkARating - parkBRating;
+   
   });
 
 // 6. Insert each park into the DOM
