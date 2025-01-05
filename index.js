@@ -124,10 +124,10 @@ allBtns.forEach((btn) => {
 const nameSorter = document.querySelector("#name-sorter");
 
 // Add an event listener
-nameSorter.addEventListener("click", (event) => {
-    event.preventDefault();
-    console.log("You clicked the name sorter");
-  });
+//nameSorter.addEventListener("click", (event) => {
+//    event.preventDefault();
+//    console.log("You clicked the name sorter");
+//  });
 
   nameSorter.addEventListener("click", (event) => {
   event.preventDefault();
@@ -167,8 +167,8 @@ parksArray.sort((parkA, parkB) => {
   const ratingSorter = document.querySelector("#rating-sorter");
  
   // Add an event listener
-  ratingSorter.addEventListener("click", (event) => {
-    event.preventDefault();
+ // ratingSorter.addEventListener("click", (event) => {
+  //  event.preventDefault();
  
 // 1. Get the main element
 const main = document.querySelector("main");
