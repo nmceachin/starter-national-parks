@@ -186,8 +186,8 @@ main.innerHTML = "";
 
   // 5. Sort the array
   parksArray.sort((parkA, parkB) => {
-    const parkARating = parseFloat(parkA.querySelector(".rating-display.stat .value").innerText);
-    const parkBRating = parseFloat(parkB.querySelector(".rating-display.stat .value").innerText);
+    const parkARating = parseFloat(parkA.querySelector(".rating-display .value").innerText);
+    const parkBRating = parseFloat(parkB.querySelector(".rating-display .value").innerText);
     if (parkARating < parkBRating) {
       return -1;
     } else if (parkARating > parkBRating) {
