@@ -168,9 +168,9 @@ parksArray.sort((parkA, parkB) => {
   // Creating the sort-by-rating functionality
   const ratingSorter = document.querySelector("#rating-sorter");
  
-  // Add an event listener
- // ratingSorter.addEventListener("click", (event) => {
-  //  event.preventDefault();
+//Add an event listener
+ ratingSorter.addEventListener("click", (event) => {
+ event.preventDefault();
  
 // 1. Get the main element
 const main = document.querySelector("main");
