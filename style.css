@@ -19,6 +19,11 @@ body {
   color: #ffffff;
 }
 
+.header-statement {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
 main {
   padding: 6px;
   display: grid;
@@ -105,6 +110,20 @@ main {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.sorter {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6px;
+}
+
+.high-rating {
+  color: #3ba17c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
   main {
     grid-template-columns: repeat(2, 1fr);
@@ -122,3 +141,4 @@ main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
