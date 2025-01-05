@@ -140,9 +140,8 @@ const nameSorter = document.querySelector("#name-sorter");
 
   // 3. Empty the main element
   main.innerHTML = "";
-});
-
-// 4. Create an array
+  
+  // 4. Create an array
 const parksArray = Array.from(parksList);
 
 // 5. Sort the array
@@ -162,6 +161,9 @@ parksArray.sort((parkA, parkB) => {
    parksArray.forEach((park) => {
     main.appendChild(park);
   });
+
+});
+
 
   // Creating the sort-by-rating functionality
   const ratingSorter = document.querySelector("#rating-sorter");
